@@ -84,19 +84,19 @@ variable "azure_psevm_image_publisher" {
 variable "azure_psevm_image_offer" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image Offer"
-  default     = "cis-centos"
+  default     = "cis-centos-7-v2-1-1-l1"
 }
 
 variable "azure_psevm_image_sku" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image SKU"
-  default     = "cis-centoslinux7-l1-gen1"
+  default     = "cis-centos7-l1"
 }
 
 variable "azure_psevm_image_version" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image Version"
-  default     = "latest"
+  default     = "3.1.15"
 }
 
 variable "azure_pse_username" {
