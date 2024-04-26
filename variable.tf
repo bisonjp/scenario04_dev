@@ -78,19 +78,19 @@ variable "azure_psevm_instance_type" {
 variable "azure_psevm_image_publisher" {
   description = "AzureにデプロイするPSEのイメージ発行元"
   type        = string
-  default     = "center-for-internet-security-inc"
+  default     = "atomizedinc1587939464368"
 }
 
 variable "azure_psevm_image_offer" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image Offer"
-  default     = "cis-rhel-8-l1"
+  default     = "atomized-r-centos8-v1"
 }
 
 variable "azure_psevm_image_sku" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image SKU"
-  default     = "cis-rhel8-l1"
+  default     = "rcentos8plan"
 }
 
 variable "azure_psevm_image_version" {
