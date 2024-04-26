@@ -147,6 +147,6 @@ resource "azurerm_linux_virtual_machine" "pse_vm" {
 
   depends_on = [
     azurerm_network_interface_security_group_association.pse_nic_association,
-    azurerm_marketplace_agreement.zs_image_agreement,
+ #   azurerm_marketplace_agreement.zs_image_agreement,
   ]
 }
