@@ -96,7 +96,7 @@ variable "azure_psevm_image_sku" {
 variable "azure_psevm_image_version" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image Version"
-  default     = "3.1.15"
+  default     = "latest"
 }
 
 variable "azure_pse_username" {
