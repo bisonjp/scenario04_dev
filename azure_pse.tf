@@ -1,11 +1,11 @@
 ################################################################################
 # Make sure that Cloud Connector image terms have been accepted
 ################################################################################
-resource "azurerm_marketplace_agreement" "zs_image_agreement" {
-  offer     = var.azure_psevm_image_offer
-  plan      = var.azure_psevm_image_sku
-  publisher = var.azure_psevm_image_publisher
-}
+#resource "azurerm_marketplace_agreement" "zs_image_agreement" {
+#  offer     = var.azure_psevm_image_offer
+#  plan      = var.azure_psevm_image_sku
+#  publisher = var.azure_psevm_image_publisher
+#}
 
 locals {
   pse_appuserdata = <<APPUSERDATA
