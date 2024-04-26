@@ -54,7 +54,7 @@ resource "azurerm_network_interface" "source_client_nic" {
 
   ip_configuration {
     name                          = "win-source_nic_configuration"
-    subnet_id                     = azurerm_subnet.pri_subnet1.id
+    subnet_id                     = azurerm_subnet.pri_subnet2.id
     private_ip_address_allocation = "Dynamic"
   }
 
