@@ -78,19 +78,19 @@ variable "azure_psevm_instance_type" {
 variable "azure_psevm_image_publisher" {
   description = "AzureにデプロイするPSEのイメージ発行元"
   type        = string
-  default     = "center-for-internet-security-inc"
+  default     = "redhat"
 }
 
 variable "azure_psevm_image_offer" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image Offer"
-  default     = "cis-centos-7-v2-1-1-l1"
+  default     = "rhel-20190605"
 }
 
 variable "azure_psevm_image_sku" {
   type        = string
   description = "Azure Marketplace CIS CentOS Image SKU"
-  default     = "cis-centos7-l1"
+  default     = "8-lvm"
 }
 
 variable "azure_psevm_image_version" {
