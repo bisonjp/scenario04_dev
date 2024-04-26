@@ -78,7 +78,7 @@ variable "azure_psevm_instance_type" {
 variable "azure_psevm_image_publisher" {
   description = "AzureにデプロイするPSEのイメージ発行元"
   type        = string
-  default     = "rcenter-for-internet-security-inc"
+  default     = "center-for-internet-security-inc"
 }
 
 variable "azure_psevm_image_offer" {
