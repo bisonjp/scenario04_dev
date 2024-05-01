@@ -113,7 +113,7 @@ resource "azurerm_linux_virtual_machine" "pse_vm" {
  # zone                = local.zones_supported ? element(var.zones, count.index) : null
 
   network_interface_ids = [
-    azurerm_network_interface.pse_nic.id,
+    azurerm_network_interface.pse_nic.id
   ]
 
   computer_name  = "azure-psevm"

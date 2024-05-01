@@ -113,7 +113,7 @@ resource "azurerm_linux_virtual_machine" "ac_vm" {
 
   admin_ssh_key {
     username   = var.azure_ac_username
-    public_key = "${trimspace(tls_private_key.key.public_key_openssh)} ${var.azure_ac_username}@me.io"
+    public_key = "${trimspace(tls_private_key.key.public_key_openssh)}"
   }
 
   os_disk {
