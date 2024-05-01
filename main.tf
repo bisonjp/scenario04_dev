@@ -98,7 +98,7 @@ resource "azurerm_public_ip" "public_ip_natgw" {
   allocation_method   = "Static"
   sku                 = "Standard"
 }
-
+/*
 # NAT Gateway
 resource "azurerm_nat_gateway" "natgw" {
   name                = "nat-gateway"
@@ -124,7 +124,7 @@ resource "azurerm_subnet_nat_gateway_association" "natgw_subnet2" {
   nat_gateway_id = azurerm_nat_gateway.natgw.id
 }
 
-
+*/
 
 resource "tls_private_key" "key" {
   algorithm = var.azure_tls_key_algorithm
