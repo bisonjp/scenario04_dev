@@ -113,10 +113,17 @@ resource "azurerm_nat_gateway_public_ip_association" "natgw_ip" {
 }
 
 # Associate NAT Gateway with Subnet
-resource "azurerm_subnet_nat_gateway_association" "natgw_subnet" {
-  subnet_id      = [azurerm_subnet.pri_subnet1.id, azurerm_subnet.pri_subnet2.id]
+resource "azurerm_subnet_nat_gateway_association" "natgw_subnet1" {
+  subnet_id      = azurerm_subnet.pri_subnet1.id
   nat_gateway_id = azurerm_nat_gateway.natgw.id
 }
+
+# Associate NAT Gateway with Subnet
+resource "azurerm_subnet_nat_gateway_association" "natgw_subnet2" {
+  subnet_id      = azurerm_subnet.pri_subnet2.id
+  nat_gateway_id = azurerm_nat_gateway.natgw.id
+}
+
 
 
 resource "tls_private_key" "key" {
