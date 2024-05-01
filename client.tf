@@ -14,7 +14,7 @@ resource "azurerm_network_security_group" "win_nsg" {
     protocol                   = "*"
     source_port_range          = "*"
     destination_port_range     = "3389"
-    source_address_prefix      = "10.0.2.0/24"
+    source_address_prefix      = "10.0.1.0/24"
     destination_address_prefix = "*"
   }
   security_rule {
