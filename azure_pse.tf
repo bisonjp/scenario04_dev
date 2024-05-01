@@ -15,7 +15,7 @@ touch /etc/yum.repos.d/zscaler.repo
 cat > /etc/yum.repos.d/zscaler.repo <<-EOT
 [zscaler]
 name=Zscaler Private Access Repository
-baseurl=https://yum.private.zscaler.com/yum/el8
+baseurl=https://yum.private.zscaler.com/yum/el7
 enabled=1
 gpgcheck=1
 gpgkey=https://yum.private.zscaler.com/gpg
