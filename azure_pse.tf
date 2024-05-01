@@ -83,7 +83,7 @@ resource "azurerm_network_interface" "pse_nic" {
 
   ip_configuration {
     name                          = "pse-nic_configuration"
-    subnet_id                     = azurerm_subnet.pri_subnet2.id
+    subnet_id                     = azurerm_subnet.pri_subnet1.id
     private_ip_address_allocation = "Dynamic"
     primary                       = true
   }
