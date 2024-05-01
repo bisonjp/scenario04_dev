@@ -86,6 +86,7 @@ resource "azurerm_network_interface" "pse_nic" {
     subnet_id                     = azurerm_subnet.pri_subnet1.id
     private_ip_address_allocation = "Dynamic"
     primary                       = true
+    public_ip_address_id = azurerm_public_ip.public_ip_natgw.id
   }
 
   tags = {"Name" = var.azure_rg_name}
